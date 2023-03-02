@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="content-wrapper">
+    <div class="container-xxl flex-grow-1 container-p-y">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="card-mb-4">
+            <h1 class="card-header">Pet Details</h1>
+            <div class="card-body">
+              <form method="POST" onsubmit="returnvalidateform()" enctype="multipart/form-data">
+                <div class="mb-3">
+                  <label for="breedname" class="form-label">BREED NAME</label>
+                  <input type="text" class="form-control" id="breedname" name="breedname" placeholder="Enter breed name" aria-describedby="defaultFormcontrolHelp" onclick="clearbreednamevalidate()">
+                  <span id="validatebreedname" class="text-danger"></span>
+                </div>
+              </form>
+            </div>
+          </div>
+          <br>
+
+          <div class="card-body">
+            <form method="POST" onsubmit="returnvalidateform()" enctype="multipart/form-data">
+              <div class="mb-3">
+                <label for="age" class="form-label">AGE</label>
+                <input type="text" class="form-control" id="age" name="age" placeholder="Enter age" aria-describedby="defaultFormcontrolHelp" onclick="clearagevalidate()">
+                <span id="validateage" class="text-danger"></span>
+              </div>
+            </form>
+          </div>
+          <br>
+
+          <div class="card-body">
+            <form method="POST" onsubmit="returnvalidateform()" enctype="multipart/form-data">
+              <div class="mb-3">
+                <label for="Details" class="form-label">DETAILS</label>
+                <input type="text" class="form-control" id="Details" name="Details" placeholder="Enter Details" aria-describedby="defaultFormcontrolHelp" onclick="clearDetailsvalidate()">
+                <span id="validateDetails" class="text-danger"></span>
+              </div>
+            </form>
+          </div>
+          <br>
+
+          <div class="card-body">
+            <form method="POST" onsubmit="returnvalidateform()" enctype="multipart/form-data">
+              <div class="mb-3">
+                <label for="cost" class="form-label">COST</label>
+                <input type="text" class="form-control" id="cost" name="cost" placeholder="Enter cost" aria-describedby="defaultFormcontrolHelp" onclick="clearcostvalidate()">
+                <span id="validatecost" class="text-danger"></span>
+              </div>
+            </form>
+          </div>
+          <br>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
